@@ -11,6 +11,13 @@ Puedes consultar el proyecto original aquí: [Reviews](https://github.com/john-s
 
 
 ---
+## Actualización 💪
+Se agregó la funcionalidad de mostrar la foto en una ventana modal.
+
+Funcionalidad inspirada en el proyecto **Modal** de [John Smilga](https://github.com/john-smilga).
+
+Puedes consultar el proyecto original aquí: [Modal](https://github.com/john-smilga/javascript-basic-projects)
+
 
 ## Comenzando 🚀
 
