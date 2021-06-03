@@ -1,5 +1,7 @@
 # Peru places
 
+![Project's Screenshot](https://raw.githubusercontent.com/alexmarinmendez/js-basics-bg-img-flipper/main/js-basics-bg-img-flipper-screen.png)
+
 En este proyecto se accede al DOM vía Javascript para mostrar (desde un array, en forma secuencial y en forma aleatorea) foto y descripción de lugares fabulosos de Peru.
 
 Inspirado en el proyecto **Reviews** de [John Smilga](https://github.com/john-smilga).
