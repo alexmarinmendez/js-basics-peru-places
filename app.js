@@ -65,6 +65,15 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
 
+//show/hide modal logic
+const modalBtn = document.querySelector(".show-modal-btn");
+const modal = document.querySelector(".modal-overlay");
+const closeBtn = document.querySelector(".close-modal-btn");
+
+const modalTitle = document.getElementById('modal-title');
+const modalImg = document.getElementById('modal-img');
+console.log(modalTitle);
+
 // set starting item
 let currentItem = 0;
 
@@ -75,6 +84,9 @@ window.addEventListener("DOMContentLoaded", function () {
   place.textContent = item.place;
   country.textContent = item.country;
   info.textContent = item.text;
+  //modal data update
+  modalTitle.textContent = item.place;
+  modalImg.src = "./img/" + item.img;
 });
 
 // show place based on item
@@ -84,6 +96,9 @@ function showPlace(p) {
   place.textContent = item.place;
   country.textContent = item.country;
   info.textContent = item.text;
+  //modal data update
+  modalTitle.textContent = item.place;
+  modalImg.src = "./img/" + item.img;
 }
 // show next place
 nextBtn.addEventListener("click", function () {
@@ -105,4 +120,13 @@ prevBtn.addEventListener("click", function () {
 randomBtn.addEventListener("click", function () {
   currentItem = Math.floor(Math.random() * places.length);
   showPlace(currentItem);
+});
+
+
+
+modalBtn.addEventListener("click", function () {
+  modal.classList.add("open-modal");
+});
+closeBtn.addEventListener("click", function () {
+  modal.classList.remove("open-modal");
 });
